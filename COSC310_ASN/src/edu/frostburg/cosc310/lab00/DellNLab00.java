@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package edu.frostburg.cosc310.lab00;
-
+import java.util.ArrayList;
+import java.util.LinkedList;
 /**
  *
  * @author Noah Dell
@@ -50,21 +51,37 @@ public class DellNLab00 implements Lab00 {
 
     @Override
     public long problem2() {
+        ArrayList<String> strings= new ArrayList<String>();
+        long start=System.currentTimeMillis();
+        for( int i=0; i<size; i++){
+            strings.add(size);
+        }
+        
+        
+        LinkedList<String> linkedlist = new LinkedList<String>();
+        long st=System.currentTimeMillis();
+
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        //create an arraylist
-        //create a linked list
-        // make both take type string
-        // start and end time
-//        for (int i=0; i<size; i++) {
-//            sb.append(i);
-//        }
-//        
-//        long end = System.currentTimeMillis();
-//        return end - start;
-//    }
-    //create two different for loops, one for each of your declarations
-    //add the urrent "i" data into your arraylist
-    //determine the time it took to loop through
-    //compare the times of arraylist and linkedlist
+          
+        /**create an arraylist
+        *create a linked list
+        *make both take type string
+        *start and end time
+        *for (int i=0; i<size; i++) {
+            sb.append(i);
+        *}
+        *long end = System.currentTimeMillis();
+        *return end - start;
+        *create two different for loops, one for each of your declarations
+        *add the urrent "i" data into your arraylist
+        *determine the time it took to loop through
+        *compare the times of arraylist and linkedlist
+        */
+      
+        
+        
+    }
+        
+    
 }
 
