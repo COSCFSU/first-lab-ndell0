@@ -53,15 +53,30 @@ public class DellNLab00 implements Lab00 {
     public long problem2() {
         ArrayList<String> strings= new ArrayList<String>();
         long start=System.currentTimeMillis();
-        for( int i=0; i<size; i++){
-            strings.add(size);
+        for( int i=0; i<10000000; i++){
+            strings.add(Integer.toString(i));
         }
+        long end1 = System.currentTimeMillis();
+        long Time1=end1-start;
+        System.out.println("Time1 arraylisr: "+Time1+" milliseconds"); // getting the total time in the arraylist
         
-        
-        LinkedList<String> linkedlist = new LinkedList<String>();
+        LinkedList<String> llist = new LinkedList<String>();
         long st=System.currentTimeMillis();
-
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for(int i=0; i<10000000;i++){
+            llist.add(Integer.toString(i));
+        }
+        long end2 = System.currentTimeMillis();
+        long Time2=end2-st;
+        System.out.println("Time2 linklist: "+Time2+" milliseconds");// getting the total time in the loinkedList
+        System.out.println("The difference in the times is: ");
+        return Math.abs(Time1-Time2);
+        // need abs because it will give you a negative number if you want
+        
+        // really large numbers- afrraylist is faster
+        // small list of numbers- linkedlist is faster
+        
+        // Next we have to calculate The time values and compare them
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
           
         /**create an arraylist
         *create a linked list
